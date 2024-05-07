@@ -108,7 +108,7 @@ namespace CrestApps.RetsSdk.Services
                 return null;
             }
 
-            string agentData = Str.Md5(Options.UserAgent + ":" + Options.UserAgentPassward);
+            string agentData = Str.Md5(Options.UserAgent + ":" + Options.UserAgentPassword);
 
             return $"{agentData}::{sessionId}:{Options.Version.AsHeader()}";
         }
